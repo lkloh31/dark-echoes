@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+}
+
+body {
+  padding: 1rem;
+}
+
+main {
+  display: grid;
+  gap: 1ch;
+}
+
+@media (width >= 500px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.episodelist ul {
+  display: grid;
+  gap: 1ch;
+
+  list-style-type: none;
+  padding: 0.25rem;
+}
+
+.episodelist li {
+  padding: 1ch;
+  border: 1px solid #ccc;
+  border-radius: 1ch;
+}
+
+.episodelist li:hover {
+  cursor: pointer;
+  font-style: italic;
+}
+
+.details {
+  padding: 0.25rem;
+}
+
+section {
+  padding: 1rem 2rem 4rem;
+}
+
+h1 {
+  padding: 0.5rem 1.5rem;
+}
